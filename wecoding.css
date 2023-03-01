@@ -1,0 +1,185 @@
+/* global selector '*' */
+/* Element/type selector  'h1, h2, o, div' */
+/* ID selector '#box, #container' */
+/* Class Selector  '.red, .m-4' */
+/* Atribute selector, Pseudo-class, Pseudo-element '*' */
+
+/* #selectors conecta um elemento HTML com o CSS */
+
+/*comente aqui*/
+
+/*!important, quando não se consegue mudar uma biblioteca de outro programador*/
+
+/* @import = incluir um css externo como: @import url("htpps://local.com/style.css");*/
+/* @media = regras condicionais para dispositivos: @media (min-width:500 px) { rules here }*/
+/* @font-face = fontes externas: @font-face {rules here}
+/* @keyframes = animação: @keyframes nameofanomation {rules here} */
+/* shorthand = juntar as propriedades site com as propriedades: https:developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties*/
+/* */
+/* */
+
+
+
+#container {
+    width: 200px; /* largura do container */
+}
+
+.m-40{
+    margin: 40px; /*margem*/
+}
+
+h1 { /* declaração*/
+    color: green; /*properties: property value*/
+    font-size: 60px; /*properties: property value*/
+    background: gray; /*properties: property value*/
+} /* declaração*/
+
+.box {
+    height: calc(100%);
+    width: 100%;
+    background-image: url("https://source.unsplash.com/random");
+    background-repeat: no-repeat;
+    background-position: top 50px;  
+}
+
+.box::after {
+    margin: 200px; /*espaço entre uma caixa e outra, como foi explicado na aula, que tudo são caixas para melhor visualização*/
+    padding: 100px; 
+    content: "Aqui pode vir uma mensagem";
+    color: white;
+}
+
+p, section {
+    width: 100px;
+    height: 100px;
+    margin: 20% auto;
+
+    border: 20px solid red;
+    border-top: dotted green 20px;
+}
+
+#footer{
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+	color: #fff;
+}
+
+.footer-img{
+	width: 100%;
+}
+
+.footer-box{
+	padding: 20px;
+}
+
+.footer-box img{
+	 width: 200px;
+	 margin-bottom: 20px;
+}
+
+.footer-box .fa{
+	margin-right: 8px;
+	font-size: 25px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding-top: 2 px;
+	border-radius: 2px;
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+}
+
+.footer-box .form-control{
+	box-shadow: none!important;
+	border: none;
+	margin-top: 25px;
+	max-width: 250px;
+}
+
+.footer-box .btn-primary{
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	margin-top: 30px;
+	background-image: linear-gradient(to right,#F27121,#E94057,#8A2387);
+}
+
+hr{
+	background-color: white;
+}
+.copyright{
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .title{margin:0 0 30px 0; padding:0 0 8px 0; border-bottom:1px solid; font-size:16px;}
+
+#footer .linklist li{margin-bottom:10px;}
+#footer .linklist li:last-child{margin-bottom:0;}
+
+#footer .smallfont{font-size:.8em; margin:0;}
+
+#footer input, #footer button{border:none; border-radius:5px;}
+#footer input{display:block; width:100%; padding:8px;}
+#footer button{padding:6px 12px; font-weight:bold; text-transform:uppercase; cursor:pointer;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:0 2px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:30px; height:30px; line-height:20px; border-radius:5px; font-size:16px; text-align:center;}
+
+.faico a{color:inherit; background-color:#195174;}
+.faico a:hover{color:#FFFFFF;}
+
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-instagram:hover{background-color:#3F729B;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-tumblr:hover{background-color:#34526F;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+
+/* Footer */
+#footer .title{border-color:#195174;}
+#footer input{color:inherit; background-color:#195174;}
+#footer button{color:inherit; background-color:#92C03A;}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Smartphone + Tablet
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:180px) and (max-width:750px) {
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#header #logo{margin-bottom:20px;}
+
+	#intro{padding-bottom:20px;}
+
+	.latest ul li{width:33.33%;}
+	.latest ul li:nth-child(3n+1){clear:left;}
+	.latest ul li:nth-child(6n+1){clear:none;}
+
+	.container{padding-bottom:50px;}
+
+	#footer{padding-bottom:30px;}
+}
+
+
+
+
